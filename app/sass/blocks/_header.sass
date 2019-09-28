@@ -47,9 +47,26 @@
     margin: 0
     border-left: 1px solid #fff
     padding-left: 10px
+    color: #ffffff
+    &:hover
+        color:#ffcb2d
+        text-decoration: none
+        transition: 0.4s color
 
 .header-phone-img
     margin-right: 10px
+    &:hover
+        animation-duration: 0.15s
+        animation-name: call
+        animation-iteration-count: 3
+        
+@keyframes call
+    from
+        transform: rotate(-7deg)
+
+    to
+        transform: rotate(7deg)
+
 
 .header-social-img
     width: 44px
@@ -66,8 +83,9 @@
     display: flex
     align-items: center
     &:hover
+        color:#ffcb2d
         text-decoration: none
-        color: #ffffff
+        transition: 0.4s color
 
 .header-logo
     position: absolute
